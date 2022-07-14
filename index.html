@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Eco Living Website Template</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+    <!-- Website template by freewebsitetemplates.com -->
+    <style>
+      .collapsible {
+        background-color: rgb(155, 165, 169);
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 50%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+      }
+
+      .active,
+      .collapsible:hover {
+        background-color: rgb(155, 165, 169);
+      }
+
+      .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+      }
+    </style>
+    <!-- Website template by freewebsitetemplates.com -->
+  </head>
+  <body>
+    <div id="header">
+      <div>
+        <a href="index.html" id="logo"
+          ><img src="images/logo.png" alt="logo"
+        /></a>
+        <ul>
+          <li class="selected">
+            <a href="index.html">Home</a>
+          </li>
+
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="body" class="home">
+      <div class="blog">
+        <img src="images/house.JPG" alt="" height="250" weight="356" />
+        <div>
+          <img src="images/kayamura.png" alt="" />
+          <h3>About Me</h3>
+          <p>
+            My name is Issa Maiga. I am from Mali and I have been in Japan for
+            almost 3 years. I am studying Digital Business and Innovation at
+            Tokyo International University. Recently, I have built interest in
+            Data Science and Data analysis, especially in the aspect of health.
+            As a result, I did an internship at Akray.
+          </p>
+        </div>
+      </div>
+      <div class="article">
+        <div>
+          <h3>My Internship at Akray</h3>
+          <p>
+            During this internship, I have experienced working with Japanese and
+            how to survive in a real Japanese work environment. This have helped
+            me to develop skills my professional skills, including netwroking
+            and also completing task under pressure.
+          </p>
+        </div>
+        <img
+          src="images/nature-place-photo.png"
+          alt=""
+          height="250"
+          weight="356"
+        />
+      </div>
+      <div class="news">
+        <img src="images/eco-park.jpg" alt="" height="250" weight="356" />
+        <div>
+          <h3>What I Learned</h3>
+          <p>
+            I have leanerd a lot things on a daily basics with my supervisors
+            and my teammates. In addition, another key thing I learned is
+            business operations to oversee. I have also built connections that
+            enable to connect with hospitals in Africa, especially in Mali.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Website template by freewebsitetemplates.com -->
+    <h2>More About Me</h2>
+
+    <p>A Collapsible:</p>
+    <button type="button" class="collapsible">Professional Experience</button>
+    <div class="content">
+      <p>
+        ARKRAY, Inc – Kyoto, Japan Establishing a promotional strategy to raise
+        awareness of routine medical testing in four French-speaking
+        countries(Mali, Guinea, Burkina Faso, and Benin) presenting ARKRAY
+        solutions to different stakeholders. Creating social media material that
+        tends to increase the number of followers as well as promote a
+        biochemical medical equipment analyzer. As a result, the number of
+        followers has climbed by 70%, and the post has now reached a milestone
+        of 2k for the first time. Searching potential medical device
+        distributors in French-speaking countries of Africa for expanding ARKRAY
+        solutions in developing countries. The outcome is 85/100 potential
+        distributors company have been established in an excel file for contact.
+      </p>
+    </div>
+
+    <p>Collapsible Set:</p>
+    <button type="button" class="collapsible">Extracurricular</button>
+    <div class="content">
+      <p>
+        Study Camps Participant August 2017 – May 2019 Ashinaga Africa
+        Initiative Leadership Program - Dakar, Senegal Student Government
+        President Leading meetings between students and then reporting students'
+        concerns to Staff members for a better experience during the study camp.
+        Ashinaga Leadership Project Management Organizing cleaning activities
+        that contribute to raising awareness regarding the harmful impact of
+        waste on the environment. English Teacher Volunteer at Senegalese
+        Elementary School Preparing Weekly lessons that include game activities
+        to keep Camberene Primary students in Senegal engaged and improve their
+        English conversation. As a result, I was able to develop a sense of
+        leadership, and classroom management skills.
+      </p>
+    </div>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+    <!-- Website template by freewebsitetemplates.com -->
+
+    <div id="footer">
+      <div>
+        <p>&#169; 2023 Tree Valley. All Rights Reserved.</p>
+        <div class="connect">
+          >
+
+          <a
+            href="https://www.facebook.com/profile.php?id=100023175364504/"
+            id="facebook"
+            >facebook</a
+          >
+          <a href="https://twitter.com/home?lang=en/" id="twitter">twitter</a>
+        </div>
+        <br />
+        <h1 style="text-align: center">Student ID: 19229076</h1>
+      </div>
+    </div>
+  </body>
+</html>
